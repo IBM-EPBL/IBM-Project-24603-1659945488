@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="title icon" type="image/png" href="images/camera-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Images from IBM OBJECT STORAGE</h1>
+        <nav>
+          <a href="" id="menu-icon"></a> 
+          <ul>
+            <li><a href="#nature">IPHONE14</a></li>
+            <li><a href="#wildlife">HIMALAYAN</a></li>
+    
+          </ul>
+        </nav>
+      </header>
+      <!-- End Header -->
+      <section>
+        <a name="nature"></a>
+        <h2>IPHONE 14 pro max</h2>
+        <div class="container">
+          <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_1.jpg"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_1.jpg" alt="iphone_1"></a>
+          <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_2.jpg"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_2.jpg" alt="iphone_2"></a>
+          <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_3.jpg"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_3.jpg" alt="iphone_3"></a>
+          <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_4.jpg"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_4.jpg" alt="iphone_4"></a>
+          <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_3.jpg"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_3.jpg" alt="iphone_5"></a>
+          <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_1.jpg"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/iphone_1.jpg" alt="iphone_6"></a>
+        </div>
+      </section>
+      <!-- End of Nature Section -->
+      <section>
+          <a name="wildlife"></a>
+          <h2>HIMALAYAN ADVENTURE</h2>
+          <div class="container">
+              <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_1.png"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_1.png" alt="himalayan_1"></a>
+              <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_2.png"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_2.png" alt="himalayan_2"></a>
+              <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_3.png"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_3.png" alt="himalayan_3"></a>
+              <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_4.png"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_4.png" alt="himalayan_4"></a>
+              <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_5.png"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_5.png" alt="himalayan_5"></a>
+              <a href="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_6.png"><img src="https://petsiet.s3.jp-tok.cloud-object-storage.appdomain.cloud/himalayan_6.png" alt="himalayan_6"></a>
+          </div>
+      </section>
+      <!-- End of Wildlife Section -->
+      <button onclick="goToTop()" id="topBtn" title="Go to top of page">Top of Page</button>
+
+
+
+        <!--chatbot-->
+        <script>
+          window.watsonAssistantChatOptions = {
+            integrationID: "506c7f66-f831-4e32-9e08-210986a6b823", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "872bca5b-fa57-46ee-9e4d-cea0e3ff4da0", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+          });
+        </script>
+<!--end chatbot-->
+      <footer class="footer">
+        <p>
+           ASSIGNMENT 3
+        </p>
+      </footer>
+    </div>
+    <script>
+      // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 4 || document.documentElement.scrollTop > 4) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function goToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+    </script>
+  </body>
+</html>
