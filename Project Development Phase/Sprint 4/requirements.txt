@@ -2,7 +2,7 @@ Flask
 requests
 flask_db2
 DB2
-ibm_db
+ibm_db2
 jsonify
 sendgrid
 Docker
