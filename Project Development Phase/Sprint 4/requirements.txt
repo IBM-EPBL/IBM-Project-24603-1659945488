@@ -6,5 +6,4 @@ ibm_db
 jsonify
 sendgrid
 Docker
-
 Kubernetes
