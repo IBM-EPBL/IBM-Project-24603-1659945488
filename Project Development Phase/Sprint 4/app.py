@@ -47,6 +47,7 @@ dsn = (
 ).format(dsn_driver, dsn_database, dsn_hostname, dsn_port, dsn_protocol, dsn_uid, dsn_pwd)
 """
 # app.config['DB2_DRIVER'] = '{IBM DB2 ODBC DRIVER}'
+#temp
 app.config['database'] = 'bludb'
 app.config['hostname'] = '3883e7e4-18f5-4afe-be8c-fa31c41761d2.bs2io90l08kqb1od8lcg.databases.appdomain.cloud'
 app.config['port'] = '31498'
